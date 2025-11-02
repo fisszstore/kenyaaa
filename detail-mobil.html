@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Mobil | Toyota Avanza 1.3 G A/T 2018 - Ivans Motor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        </header>
+
+    <section class="breadcrumb-section container">
+        <a href="index.html">Home</a> &gt; <a href="stok.html">Stok Mobil</a> &gt; Toyota Avanza 2018
+    </section>
+
+    <section class="car-detail-section container">
+        
+        <div class="main-title">
+            <h1>Toyota Avanza 1.3 G A/T 2018</h1>
+            <p>Tahun Registrasi: 2018 | Transmisi: Automatic | Bahan Bakar: Bensin</p>
+        </div>
+
+        <div class="detail-grid">
+            
+            <div class="detail-left">
+                <div class="photo-gallery">
+                    <img id="main-photo" src="https://via.placeholder.com/700x450?text=Foto+Utama+Avanza" alt="Foto Utama Mobil">
+                    <div class="thumbnail-nav">
+                        <img src="https://via.placeholder.com/150x100?text=Depan" onclick="changeMainPhoto(this)">
+                        <img src="https://via.placeholder.com/150x100?text=Belakang" onclick="changeMainPhoto(this)">
+                        <img src="https://via.placeholder.com/150x100?text=Interior" onclick="changeMainPhoto(this)">
+                        <img src="https://via.placeholder.com/150x100?text=Mesin" onclick="changeMainPhoto(this)">
+                    </div>
+                </div>
+
+                <div class="detail-tabs">
+                    <h2>Deskripsi Unit</h2>
+                    <p>Unit ready stock, kondisi sangat terawat. Kilometer rendah, bebas banjir dan tabrakan. Semua surat-surat lengkap dan pajak hidup. Siap pakai!</p>
+                    
+                    <h2 style="margin-top: 30px;">Spesifikasi Lengkap</h2>
+                    <table class="spec-table">
+                        <tr>
+                            <th>Tahun Pembuatan</th>
+                            <td>2018</td>
+                            <th>Tipe Mesin</th>
+                            <td>1.300cc VVT-i</td>
+                        </tr>
+                        <tr>
+                            <th>Transmisi</th>
+                            <td>Automatic (A/T)</td>
+                            <th>Odometer (Km)</th>
+                            <td>55.000 Km</td>
+                        </tr>
+                        <tr>
+                            <th>Warna</th>
+                            <td>Hitam Metallic</td>
+                            <th>Fitur Tambahan</th>
+                            <td>ABS, Airbag Ganda, AC Double Blower</td>
+                        </tr>
+                    </table>
+
+                    <h2 style="margin-top: 30px;">Catatan Tambahan dari Dealer</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Garansi Bebas Banjir dan Tabrakan Rangka.</li>
+                        <li><i class="fas fa-check-circle"></i> Tersedia Paket Kredit DP Ringan.</li>
+                        <li><i class="fas fa-check-circle"></i> Service record resmi Toyota.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detail-right">
+                <div class="price-box">
+                    <p class="label">HARGA JUAL KREDIT</p>
+                    <p class="price-value">Rp **165.000.000**</p>
+                    <p class="disclaimer">Harga Cash: Rp 175.000.000 (Nego Tipis)</p>
+                </div>
+
+                <div class="contact-card">
+                    <h4>Hubungi Sales Kami</h4>
+                    <p><strong>Bapak Ivan (PIC Ivans Motor)</strong></p>
+                    <a href="https://wa.me/62812xxxxxxxx?text=Saya%20tertarik%20dengan%20Avanza%202018%20di%20website" target="_blank" class="btn btn-whatsapp-large">
+                        <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                    </a>
+                    <a href="tel:0812xxxxxxxx" class="btn btn-phone-large">
+                        <i class="fas fa-phone"></i> Telepon Sekarang
+                    </a>
+                </div>
+
+                <div class="simulasi-card">
+                    <h4>Simulasi Kredit</h4>
+                    <form action="simulasi.html" method="GET">
+                        <input type="number" placeholder="Total DP" required>
+                        <select required>
+                            <option value="">Pilih Tenor</option>
+                            <option value="3">3 Tahun</option>
+                            <option value="4">4 Tahun</option>
+                            <option value="5">5 Tahun</option>
+                        </select>
+                        <button type="submit" class="btn btn-detail">Hitung Angsuran</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        </footer>
+
+    <a href="https://wa.me/62812xxxxxxxx" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i> Chat Kami
+    </a>
+
+    <script>
+        function changeMainPhoto(thumbnail) {
+            const mainPhoto = document.getElementById('main-photo');
+            mainPhoto.src = thumbnail.src;
+            // Opsi: Tambahkan kelas 'active' pada thumbnail yang diklik
+        }
+        // Masukkan script.js (untuk nav toggle) di sini jika perlu
+        // <script src="script.js"></script>
+    </script>
+</body>
+</html>
